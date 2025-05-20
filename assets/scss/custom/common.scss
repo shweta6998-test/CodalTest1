@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Eurostile Demi';
+  src: url('../fonts/Eurostile-Demi.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MYRIADPRO BOLD';
+  src: url('../fonts/MYRIADPRO-BOLD.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MYRIADPRO REGULAR';
+  src: url('../fonts/MYRIADPRO-REGULAR.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MYRIADPRO SEMIBOLD';
+  src: url('../fonts/MYRIADPRO-SEMIBOLD.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+input:focus, button:focus, textarea:focus, select:focus, details:focus, [href]:focus, 
+[tabindex]:not([tabindex="-1"]):focus, [contenteditable="true"]:focus,
+input:focus + label{
+    outline-offset: 0 !important;
+    outline: none !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: 'MYRIADPRO SEMIBOLD';
+}
+.body{
+    margin: 0;
+    font-family: 'MYRIADPRO REGULAR';
+    color: #3E4545;
+    font-size: 16px;
+    line-height: 22px;
+}
+.container{
+    max-width: 100%;
+    padding: 0 40px;
+}
+.button{
+    padding: 16px 20px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: 'Eurostile Demi';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #222222;
+    background-color: #FFBA00;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+}
