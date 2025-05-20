@@ -1,0 +1,222 @@
+.custom-top-header{
+    background-color: #eaeaea;
+    .top-header-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ol.breadcrumbs{
+        margin: 0;
+    }
+    .breadcrumb{
+        margin-right: 5px;
+    }
+    .breadcrumb a{
+        color: #707070;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .breadcrumb.is-active > .breadcrumb-label{
+        color: #222222;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .breadcrumb:not(:first-child)::before{
+        border: 0;
+        transform: none;
+        content: ">";
+    }
+    .add-to-cart-header{
+        display: flex;
+        align-items: center;
+    }
+    .header-price .price{
+        font-family: 'Eurostile Demi';
+        font-size: 16px;
+        line-height: 24px;
+        color: #222222;
+        margin-right: 19px;
+    }
+    .add-to-cart-static{
+        margin: 0;
+    }
+}
+.productView-details{
+    .productView-title{
+        font-family: 'Eurostile Demi';
+        font-size: 24px;
+        line-height: 32px;
+        color: #222222;
+        margin-bottom: 27px;
+    }
+    .productView-brand,
+    .productView-rating,
+    .productView-info-value{
+        display: none;
+    }
+}
+.productView-options{
+    margin-bottom: 10px;
+    .form-field{
+        margin: 0;
+    }
+    .form-label{
+        display: none;
+    }
+    .form-option{
+        min-width: 140px;
+        text-align: center;
+        border-color: #E4E7EC;
+        border-radius: 2px;
+        padding: 12px;
+    }
+    .form-option-variant{
+        color: #344054;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .form-radio:checked + .form-option{
+        border-color: #51F7CE;
+        background-color: #EFFEFA;
+        box-shadow: none;
+    }
+    .short-desc{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.right-atc-wrapper{
+    border: 1px solid #EAEAEA;
+    padding: 30px 35px;
+    .atc-price-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+    .productView-price{
+        margin: 0;
+    }
+    span{
+            font-size: 18px;
+            line-height: 28px;
+            color: #006747;
+        }
+    .price{
+        font-family: 'Eurostile Demi';
+        font-size: 32px;
+        line-height: 46px;
+        color: #006747;
+    }
+    .sku-label{
+        background-color: #F7F7F8;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #3F3F50;
+    }
+    .add-to-list{
+        text-align: center;
+        .button{
+            display: block;
+            margin: 0 auto 8px;
+            background-color: #13997C;
+            color: #fff;
+            padding: 12px;
+        }
+        a{
+            color: #575757;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    .add-to-cart-wrapper{
+        display: flex;
+        padding: 24px 0;
+        border-top: 1px solid #EAEAEA;
+        border-bottom: 1px solid #EAEAEA;
+        .form-field, #form-action-addToCart{
+            margin: 0 6px 0 0;
+        }
+        .form-label{
+            display: none;
+        }
+    }
+}
+.tab-wrapper{
+    .tabs-wrapper{
+        padding: 40px 0;
+    }
+    .tabs-wrapper:not(:last-child){
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .tab-title{
+        color: #0F172A;
+        font-family: 'MYRIADPRO SEMIBOLD';
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0;
+        margin: 0 0 30px;
+    }
+    .tab-content{
+        padding: 0;
+        h3{
+            margin: 0 0 14px;
+            font-size: 20px;
+            line-height: 28px;
+            color: #0F172A;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .tab-content-sheet ul{
+        list-style-type: none;
+        svg{
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+    }
+    .spec-item {
+        display: table;
+        width: 100%;
+        border: 1px solid #C5C5C5; 
+    }
+    .spec-item dt,
+    .spec-item dd {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .spec-item dt {
+        width: 18%;
+        margin: 0;
+        color: #000000;
+        border-right: 1px solid #C5C5C5;
+    }
+    .spec-item dd {
+        width: 82%;
+        margin: 0;
+        color: #000000;
+    }
+    .spec-item dt:nth-of-type(odd),
+    .spec-item dd:nth-of-type(odd) {
+        background-color: #F8F8F8;
+    }
+    .spec-item dt:nth-of-type(even),
+    .spec-item dd:nth-of-type(even) {
+        background-color: #EBEBEB; 
+    }
+    .tab-content-sheet{
+        a{
+            display: inline-block;
+            margin: 0 0 15px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #575757;
+        }
+    }
+}

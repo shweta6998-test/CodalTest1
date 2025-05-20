@@ -10,11 +10,29 @@ product:
         limit: {{theme_settings.productpage_similar_by_views_count}}
 ---
 {{inject 'productId' product.id}}
-
+{{#partial "hero"}}
+<div class="custom-top-header">
+    <div class="container">
+        <div class="top-header-inner">
+            <div class="breadcrumbs-list">
+                {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+            </div>
+            <div class="add-to-cart-header">
+                <div class="header-price">
+                    {{#or customer (unless settings.hide_price_from_guests)}}
+                        {{> components/products/price price=product.price}}
+                    {{else}}
+                        {{> components/common/login-for-pricing}}
+                    {{/or}}
+                </div>
+                <button class="button add-to-cart-static">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{/partial}}
 {{#partial "page"}}
-
-    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
-
+    
     {{#each product.shipping_messages}}
         {{> components/common/alert/alert-info message}}
     {{/each}}
